@@ -8,7 +8,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    // "noUnusedParameters": true,
     "useUnknownInCatchVariables": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
@@ -19,14 +19,16 @@
     "sourceMap": true,
     "outDir": "dist",
     "baseUrl": ".",
-    "watchFile": "useFsEvents",
-    "watchDirectory": "useFsEvents",
-    "watchOptions": {
-      "excludeDirectories": ["**/node_modules", "_build", "dist"]
-    },
+    "skipLibCheck": true,
     "paths": {
-      "*": ["node_modules/*", "src/types/*"]
+      "*": ["node_modules"]
     }
   },
-  "include": ["src/**/*"]
+  "watchFile": "useFsEvents",
+  "watchDirectory": "useFsEvents",
+  "watchOptions": {
+    "excludeDirectories": ["node_modules", "_build", "dist"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "_build", "dist"]
 }

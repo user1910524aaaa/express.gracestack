@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format:write": "prettier --write ."
+    "format:write": "prettier --write .",
+    "dev:webpack": "webpack --watch --progress",
+    "dev:server": "node ./dist/bundle.js",
+    "dev": "run-p dev:*"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/user1910524aaaa/express.gracestack.git"
   },
-  "author": "",
+  "author": "Paul Filip",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/user1910524aaaa/express.gracestack/issues"
@@ -21,10 +24,15 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@webpack-cli/serve": "^1.7.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
     "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3",
+    "webpack-node-externals": "^3.0.0"
   }
 }

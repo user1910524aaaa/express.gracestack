@@ -6,7 +6,6 @@ module.exports = {
   semi: true,
   singleQuote: true,
   trailingComma: 'all',
-  jsxSingleQuote: false,
   arrowParens: 'avoid',
   printWidth: 120,
   endOfLine: 'lf',

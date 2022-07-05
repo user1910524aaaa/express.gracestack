@@ -1,12 +1,17 @@
 import express from 'express';
-import type { Express, Request, Response } from 'express';
+import bodyParser from 'body-parser';
 
-const app: Express = express();
+import type { Express } from 'express';
+
+import { signinRoute } from './routes/signin';
+import { signupRoute } from './routes/signup';
+
+export const app: Express = express();
 const port = 4000;
 
-app.get('/', (_req: Request, res: Response) => {
-  res.json({ salute: 'Hello Worlds!' });
-});
+app.use(bodyParser.json());
+app.use('/authentication', signinRoute);
+app.use('/authentication', signupRoute);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

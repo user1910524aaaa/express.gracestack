@@ -1,0 +1,16 @@
+[
+  {
+    "firstName": "Ion",
+    "lastName": "Grigore",
+    "birthDate": "2022-07-05T09:10:00.000Z",
+    "email": "ion@grigore.com",
+    "password": "I0N6R|GO83"
+  },
+  {
+    "firstName": "Ion",
+    "lastName": "Vasile",
+    "birthDate": "1991-07-05T09:10:00.000Z",
+    "email": "ion@vasile.com",
+    "password": "I0N6R|GO83"
+  }
+]
